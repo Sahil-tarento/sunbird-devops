@@ -17409,10 +17409,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentCreate'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
               
@@ -17427,10 +17423,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentCreate'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
         
@@ -17445,10 +17437,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentUpdate'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
 
@@ -17463,10 +17451,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentAccess'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
         
@@ -17481,10 +17465,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentAccess'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
         
@@ -17499,10 +17479,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentCreate'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
         
@@ -17517,10 +17493,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentCreate'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
         
@@ -17535,10 +17507,6 @@ kong_apis:
       - name: acl
         config.whitelist:
           - 'contentCreate'
-      - name: rate-limiting
-        config.policy: local
-        config.hour: "{{ medium_rate_limit_per_hour }}"
-        config.limit_by: credential
       - name: request-size-limiting
       
   - name: getBrowseByCompetencyV2
@@ -17575,7 +17543,6 @@ kong_apis:
         config.limit_by: credential
       - name: request-size-limiting
         config.allowed_payload_size: "{{ medium_request_size_limit }}"
-
 
   - name: cqfQuestionSetCreateExt
     uris: "{{ cqf_questionset_prefix }}/questionset/create"
